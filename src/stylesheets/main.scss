@@ -1,0 +1,80 @@
+.page-home{
+    width:350px;
+    margin:auto;
+    margin-top: 2%;
+    .page-home-input{
+        .input-search{
+            position: relative;
+            input{
+                width:100%;
+                padding-left: 30px;
+                border-radius: 0px;
+                &:focus{
+                    box-shadow: none;
+                    border-color: #ccc;;
+                }
+            }
+            .glyphicon-search{
+                position: absolute;
+                left: 8px;
+                top:10px;
+            }
+        }
+    }
+    .open-list{
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+        margin: 0;
+        ul{
+            list-style-type: none;
+            padding: 0;
+            background: #fff;            
+            height: 285px;
+            overflow-y: scroll;
+            li{                
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #dedede;
+                span{
+                    &:nth-child(1){
+                        margin-right: 5%;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }                  
+                }
+                &:hover{
+                    background-color:#5a71a7;
+                    color:#fff;
+                    cursor: pointer;
+                }
+                &.active{                    
+                    background-color: #5a71a7;
+                    color:#fff;
+                }                
+            }
+        }
+    }
+    .selected-data{
+        p{
+            margin-top: 12px;
+            font-weight: bold;
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

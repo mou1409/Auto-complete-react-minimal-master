@@ -1,1 +1,5 @@
-# Auto-complete-react-minimal-master
+# Build 
+
+1. Run  `npm install`
+
+2. Run `npm start`
